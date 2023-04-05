@@ -1,4 +1,4 @@
-### Prime-flix-65
+# Prime-flix-65
 <img src="./src/assets/Readme.png"/></br>
 <div style="display: inline_block"><br/>
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
