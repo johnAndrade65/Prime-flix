@@ -9,11 +9,12 @@ Um programa feito com React JS e React Routes para exibir lista de filmes, infor
 Deploy: https://primeflix65.netlify.app
 
 ## Instalação
-Para instalar o programa, siga estas etapas:</br>
-
-1- Clone o repositório para sua máquina local.</br>
-2- Instale as dependências com npm install.</br>
-3- Execute o programa com npm start.</br>
+<h3>Crie uma lista html com esse texto abaixo: </h3>
+<ul>
+  <li>Clone o repositório para sua máquina local.</li>
+  <li>Instale as dependências com npm install.</li>
+  <li>Execute o programa com npm start.</li>
+</ul>
 
 ## Como usar
 Para usar o programa, abra-o em um navegador e navegue pelas diferentes páginas para ver informações sobre os filmes.
