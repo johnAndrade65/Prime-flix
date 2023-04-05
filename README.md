@@ -1,11 +1,11 @@
 # Prime-flix-65
-<img src="./src/assets/Readme.png"/><br>
-<div style="display: inline_block"><br/>
+<img src="./src/assets/Readme.png"/><br/>
+<div style="display: inline_block">
     <img alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
     <img alt="bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </div>
 Um programa feito com React JS e React Routes para exibir lista de filmes, informações como avaliações, trailer e mais sobre filmes. Ele usa os dados da API do TheMovieDB.
-<br><br>
+<br/><br/>
 Deploy: https://primeflix65.netlify.app
 
 ## Instalação
