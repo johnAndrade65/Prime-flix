@@ -5,11 +5,11 @@
     <img alt="bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </div>
 Um programa feito com React JS e React Routes para exibir lista de filmes, informações como avaliações, trailer e mais sobre filmes. Ele usa os dados da API do TheMovieDB.
-<br>
+<br><br>
 Deploy: https://primeflix65.netlify.app
 
 ## Instalação
-<h3>Crie uma lista html com esse texto abaixo: </h3>
+<h3>Para instalar o projeto siga as etapas abaixo:</h3>
 <ul>
   <li>Clone o repositório para sua máquina local.</li>
   <li>Instale as dependências com npm install.</li>
