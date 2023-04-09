@@ -8,6 +8,14 @@ Um programa feito com React JS e React Routes para exibir lista de filmes, infor
 
 Deploy: https://primeflix65.netlify.app
 
+## Atualização:
+Novidades:</br></br>
+1- Responsividade do CSS3 com mais dispositivos.</br>
+2- Correção de erros de responsividade.</br>
+3- Atualização do CSS3 dos componentes: Header.
+4- Atualização do CSS3 das pages: Favoritos, Home.
+
+
 ## Instalação
 Para instalar o programa, siga estas etapas:
 

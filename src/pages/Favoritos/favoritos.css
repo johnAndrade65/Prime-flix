@@ -5,20 +5,25 @@
     align-items: center;
 }
 .meus-filmes h1{
+    font-size: 25px;
     margin-bottom: 14px;
 }
 .meus-filmes span{
-    font-size: 18px;
+    font-size: 15px;
 }
 .meus-filmes ul{
-    width: 720px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
 }
 .meus-filmes ul li{
     list-style: none;
     display: flex;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 14px;
+    margin: 14px 10px;
 }
 .meus-filmes div{
     display: flex;

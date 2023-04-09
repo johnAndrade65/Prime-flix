@@ -1,7 +1,7 @@
 header{
     height: 60px;
     width: 100%;
-    background: #000;
+    background: #116feb;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -21,3 +21,12 @@ header{
     padding: 5px 14px;
     border-radius: 4px;
 }
+
+/* @media (max-width: 820px) {
+    header{
+        display: flex;
+        width: 100vw;
+        max-width: 100%;
+    }
+  }
+   */
