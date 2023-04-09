@@ -28,5 +28,3 @@ Os arquivos principais do projeto estão localizados na pasta "src". O arquivo A
 
 ## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com correções de bugs, novos recursos ou melhorias na documentação.
-
-Com base nas informações acima, o README.md para o projeto "Prime-flix-65" está completo. É importante lembrar que cada projeto pode ter requisitos diferentes e pode ser necessário adicionar informações adicionais ao README.md, dependendo das necessidades específicas do projeto.
