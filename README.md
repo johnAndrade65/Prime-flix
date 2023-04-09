@@ -13,7 +13,7 @@ Deploy: https://primeflix65.netlify.app
 Novidades:</br></br>
 1- Responsividade do CSS3 com mais dispositivos.</br>
 2- Correção de erros de responsividade.</br>
-3- Atualização do CSS3 dos componentes: Header.
+3- Atualização do CSS3 dos componentes: Header.</br>
 4- Atualização do CSS3 das pages: Favoritos, Home.
 
 
