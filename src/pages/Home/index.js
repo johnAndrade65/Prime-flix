@@ -10,9 +10,10 @@ const Home = () => {
  
      useEffect(() => {
         async function loadFilmes(){
+
             const response = await api.get("movie/now_playing", {
                 params:{
-                  api_key: '70bb445aa288b78018a03f5e827a8909',
+                  api_key: process.env.REACT_APP_API_KEY,
                   language: "pt-BR",
                   page: 1
                 }
