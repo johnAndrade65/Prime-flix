@@ -4,18 +4,23 @@ import './filme-info.css';
 import api from "../../services/api";
 import { toast } from "react-toastify";
 
+//Componente filme-info
 const Filme = () => {
+     //Pega o id pelos parametros da url do site
      const { id } = useParams();
+     //useState "filme" para armazenar os dados pegos na API
      const [filme, setFilme] = useState({});
+
      const [loading, setLoading] = useState(true);
      const navigate = useNavigate();
 
+     //dispara o useEffect para pegar os dados da API de acordo com o id do filme selecionado
      useEffect(() => {
           async function loadFilme() {
                await api
                     .get(`/movie/${id}`, {
                          params: {
-                              api_key: "70bb445aa288b78018a03f5e827a8909",
+                              api_key: process.env.REACT_APP_API_KEY,
                               language: "pt-BR",
                          },
                     })
@@ -33,24 +38,29 @@ const Filme = () => {
           return () => {
                console.log("Componente foi desmontado");
           };
+          //useEffect disparado sempre que houver alterações no "navigate" e no "id"
      }, [navigate, id]);
 
+     //Function salvar filmes para adicionar os filmes salvos como favoritos no localstorage"@primeflix"
      function salvarFilme(){
         const minhaLista = localStorage.getItem("@primeflix");
 
         let filmesSalvos = JSON.parse(minhaLista) || [];
         const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id)
 
+        //Se o filme já estiver na lista será renderizado a mensagem "Esse filme já na lista!"
         if(hasFilme){
             toast.warning("Esse filme já na lista!");
             return;
         }
 
+        //Salvar filme
         filmesSalvos.push(filme);
         localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
         toast.success("Filme salvo com sucesso!");
      }
 
+     //Enquanto "loading" for true será exibido "Carregando detalhes..."
      if (loading) {
           return (
                <div className="filme-info">

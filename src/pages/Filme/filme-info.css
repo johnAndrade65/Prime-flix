@@ -1,3 +1,4 @@
+/*Estilização do componente "filme-info"*/
 .filme-info{
     margin: 0 auto;
     margin-top: 18px;
@@ -21,7 +22,6 @@
 .filme-info span{
     margin: 8px 0;
 }
-
 .area-buttons button{
     margin-right: 12px;
     margin-top: 14px;

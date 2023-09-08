@@ -3,14 +3,18 @@ import { useEffect, useState } from "react";
 import "./favoritos.css";
 import { toast } from "react-toastify";
 
+//Página favoritos
 function Favoritos() {
+     //useState para armazenar os filmes adicionados aos favoritos
      const [filmes, setFilmes] = useState([]);
 
+     //useEffect para pegar os itens salvos no localStorage como favoritos
      useEffect(() => {
           const minhaLista = localStorage.getItem("@primeflix");
           setFilmes(JSON.parse(minhaLista) || []);
      }, []);
 
+     //Function para remover/excluir algum filme especifico
      function excluirFilmes(id){
         let filtroFilmes = filmes.filter((item) => {
             return(item.id !== id)
@@ -21,6 +25,7 @@ function Favoritos() {
         toast.success("Filme removido com sucesso!")
      }
 
+     //Renderização do componente
      return (
           <div className="meus-filmes">
                <h1>Meus filmes</h1>

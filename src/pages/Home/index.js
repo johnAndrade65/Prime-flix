@@ -2,13 +2,17 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from 'react-router-dom';
 
+//Import do estilização(css3) do componente
 import './home.css';
 
 const Home = () => {
+    //useStates "filmes" e "loading"
      const [filmes, setFilmes] = useState([]);
      const [loading, setLoading] = useState(true);
  
+     //dispara o useEffect para acessar o dados capturados na API
      useEffect(() => {
+        //Function para carregar os filmes
         async function loadFilmes(){
 
             const response = await api.get("movie/now_playing", {
@@ -18,12 +22,15 @@ const Home = () => {
                   page: 1
                 }
             })
-            setFilmes(response.data.results.slice(0, 10));
+            //O useState "Filmes" irá receber o valor de "response" que irá armazenar os dados da webapi, serão pegos apenas os primeiros 15 elementos
+            setFilmes(response.data.results.slice(0, 15));
+            //Quando os dados dá API forem pegos "loading" será definido com false para parar de exibir a mensagem "Carregando filmes.."
             setLoading(false);
         }
         loadFilmes();
      }, []);
 
+     //Enquanto o useState "loading" for true irá renderizar a mensagem "carregando filmes.."
      if(loading){
         return(
             <div className="loading">
@@ -32,6 +39,7 @@ const Home = () => {
         )
      }
 
+     //Renderização do componente "Home"
      return (
           <div>
                <div className="lista-filmes">
