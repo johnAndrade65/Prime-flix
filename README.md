@@ -11,10 +11,9 @@ Deploy: https://primeflix65.netlify.app
 
 ## Atualização:
 Novidades:</br></br>
-1- Responsividade do CSS3 com mais dispositivos.</br>
-2- Correção de erros de responsividade.</br>
-3- Atualização do CSS3 dos componentes: Header.</br>
-4- Atualização do CSS3 das pages: Favoritos, Home.
+1- Aumento no limite de filmes a serem renderizados na página principal.</br>
+2- Adição de comentarios necessarios aos nossos componentes e arquivos de estilização.</br>
+3- Adição de variaveis ambientes nos componentes "Home" e "Filme-info", dentro do diretorio "Filme".</br>
 
 
 ## Instalação
